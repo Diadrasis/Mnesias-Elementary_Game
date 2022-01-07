@@ -4,7 +4,7 @@
   </a>
   <br/>
   
-Η εκπαιδευτική εφαρμογή Μνησίας για παιδιά Δημοτικού
+Η εκπαιδευτική εφαρμογή Μνησίας για παιδιά Δημοτικού. Google Play: https://play.google.com/store/apps/details?id=net.Diadrasis.MnesiasElementarySchool App Store: https://apps.apple.com/mn/app/mnesias-%CF%80%CE%B1%CE%B9%CF%87%CE%BD%CE%B9%CE%B4%CE%B9-%CE%B4%CE%B7%CE%BC%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%85/id1600913282
 
   
 ## Privacy Policy
