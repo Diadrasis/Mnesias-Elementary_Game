@@ -4,7 +4,7 @@
   </a>
   <br/>
   
-Η εκπαιδευτική εφαρμογή Μνησίας για παιδιά Δημοτικού. Ο σκοπός του παιχνιδιού είναι να μάθει ο χρήστης τόσο τα ηχοχρώματα των αρχαίων μουσικών οργάνων αλλά και σε ποιες περιοχές του τότε ελληνόφωνου γεωγραφικού χώρου τα έπαιζαν. <a href="https://play.google.com/store/apps/details?id=net.Diadrasis.MnesiasElementarySchool" target="_blank">Google Play</a> <a href="https://apps.apple.com/mn/app/mnesias-%CF%80%CE%B1%CE%B9%CF%87%CE%BD%CE%B9%CE%B4%CE%B9-%CE%B4%CE%B7%CE%BC%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%85/id1600913282" target="_blank">App Store</a>
+Η εκπαιδευτική εφαρμογή Μνησίας για παιδιά Δημοτικού. Ο σκοπός του παιχνιδιού είναι να μάθει ο χρήστης τόσο τα ηχοχρώματα των αρχαίων μουσικών οργάνων αλλά και σε ποιες περιοχές του τότε ελληνόφωνου γεωγραφικού χώρου τα έπαιζαν. <a href="https://play.google.com/store/apps/details?id=net.Diadrasis.MnesiasElementarySchool" target="_blank">Google Play</a>, <a href="https://apps.apple.com/mn/app/mnesias-%CF%80%CE%B1%CE%B9%CF%87%CE%BD%CE%B9%CE%B4%CE%B9-%CE%B4%CE%B7%CE%BC%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%85/id1600913282" target="_blank">App Store</a>
 
   
 ## Privacy Policy
