@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f41df1e0c1f9a348902e00daf0ed66d, type: 3}
   m_Name: Helys
   m_EditorClassIdentifier: 
-  nameTitle: "\u0397 \u03BB\u03C5\u03C1\u03B1 \u03C4\u03B7\u03C2 \u0394\u03B1\u03C6\u03BD\u03B7\u03C2"
+  nameTitle: "\u0397 \u03BB\u03CD\u03C1\u03B1 \u03C4\u03B7\u03C2 \u0394\u03AC\u03C6\u03BD\u03B7\u03C2"
   cordinates: {x: 24, y: 38}
-  imgMarker: {fileID: 21300000, guid: 63127ac011a427e4e8983774683aaabf, type: 3}
+  imgMarker: {fileID: 2800000, guid: ea7eb0aa8eaab054a91d4219f9719f63, type: 3}
   mainImage: {fileID: 21300000, guid: 9f08321737c528f4b966334c56a73e4e, type: 3}
   clip: {fileID: 8300000, guid: d41f2dc86ae32f44492e405124b84118, type: 3}
   infoText: "\u03A4\u03BF \u03BA\u03AD\u03BB\u03C5\u03C6\u03BF\u03C2 \u03C7\u03B5\u03C1\u03C3\u03B1\u03AF\u03B1\u03C2

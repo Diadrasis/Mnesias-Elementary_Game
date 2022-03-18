@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eef41dad5da35fe43a0965e8cad2fe9b, type: 2}
-  m_sharedMaterial: {fileID: 5749343185099826357, guid: eef41dad5da35fe43a0965e8cad2fe9b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8b83c4250a4465c4891e8a58eb0c67e2, type: 2}
+  m_sharedMaterial: {fileID: -837955371699254096, guid: 8b83c4250a4465c4891e8a58eb0c67e2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1197,6 +1197,81 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &967357012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 967357013}
+  - component: {fileID: 967357015}
+  - component: {fileID: 967357014}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &967357013
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967357012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1962647461}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &967357014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967357012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 794ea8f4ba5baae43af6c8cbb864654a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &967357015
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967357012}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1039872702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1274,7 +1349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8159855205272054746, guid: 8fe16de0e2e2a244588a854f70965f93, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 650
+      value: 749
       objectReference: {fileID: 0}
     - target: {fileID: 8159855205272054746, guid: 8fe16de0e2e2a244588a854f70965f93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1292,12 +1367,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnlHelp
       objectReference: {fileID: 0}
-    - target: {fileID: 8159855206417300918, guid: 8fe16de0e2e2a244588a854f70965f93, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -6.1099854
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fe16de0e2e2a244588a854f70965f93, type: 3}
+--- !u!114 &1039872703 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8159855205002608537, guid: 8fe16de0e2e2a244588a854f70965f93, type: 3}
+  m_PrefabInstance: {fileID: 1039872702}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1039872706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1039872706, guid: 8fe16de0e2e2a244588a854f70965f93, type: 3}
+  m_PrefabInstance: {fileID: 1039872702}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1050554355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1542,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pnlHelp: {fileID: 1246660559}
   btnCloseHelp: {fileID: 1297556492}
+  btnCloseHelpOut: {fileID: 1039872706}
+  txtHelp: "\u039C\u03B5 \u03C4\u03B7\u03BD \u03B5\u03C0\u03B9\u03BB\u03BF\u03B3\u03AE
+    \u03BC\u03B9\u03B1\u03C2 \u03B8\u03AD\u03C3\u03B7\u03C2 \u03C3\u03C4\u03BF\u03BD
+    \u03C7\u03AC\u03C1\u03C4\u03B7, \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF\u03C2 \u03BD\u03B1
+    \u03B4\u03B5\u03B9\u03C2 \u03C0\u03BB\u03B7\u03C1\u03BF\u03C6\u03BF\u03C1\u03AF\u03B5\u03C2
+    \u03B3\u03B9\u03B1 \u03C4\u03B1 \u03BC\u03BF\u03C5\u03C3\u03B9\u03BA\u03AC \u03CC\u03C1\u03B3\u03B1\u03BD\u03B1
+    \u03C0\u03BF\u03C5 \u03B2\u03C1\u03AD\u03B8\u03B7\u03BA\u03B1\u03BD. \u0395\u03C0\u03AF\u03C3\u03B7\u03C2
+    \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF\u03C2 \u03BD\u03B1 \u03BA\u03AC\u03BD\u03B5\u03B9\u03C2
+    \u03B6\u03BF\u03C5\u03BC \u03B3\u03B9\u03B1 \u03BD\u03B1 \u03B4\u03B5\u03B9\u03C2
+    \u03C4\u03BF\u03BD \u03C7\u03AC\u03C1\u03C4\u03B7 \u03C0\u03B9\u03BF \u03B1\u03BD\u03B1\u03BB\u03CD\u03C4\u03B9\u03BA\u03AC."
+  txtParent: {fileID: 1039872703}
   creditsSceneNum: 3
   openSceneNum: 1
   btnBack: {fileID: 1713158749}
@@ -1456,7 +1560,7 @@ MonoBehaviour:
   btnHelp: {fileID: 1713158747}
   btnResetScene: {fileID: 1713158746}
   btnExitApp: {fileID: 1713158745}
-  numValue: 1180
+  numValue: 1210
   timeValue: 1
 --- !u!1 &1246660559 stripped
 GameObject:
@@ -1705,10 +1809,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minZoom: 7
   maxZoom: 9.5
-  minLatitude: 38.36406
-  maxLatitude: 38.36406
-  minLongitude: 23.040014
-  maxLongitude: 23.040014
+  minLatitude: 38.05741
+  maxLatitude: 38.93499
+  minLongitude: 23.128166
+  maxLongitude: 25.786499
   positionRangeType: 0
   useZoomRange: 1
   usePositionRange: 1
@@ -1818,7 +1922,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1532815165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1207441221}
+        m_TargetAssemblyTypeName: ElementaryManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1532815165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2170,6 +2286,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7514201674750225141, guid: ac6fa4aa9e7de484480f24024c7138d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c3da05f21082974ea5dd22e9e7299f3, type: 3}
     - target: {fileID: 7514201674750225143, guid: ac6fa4aa9e7de484480f24024c7138d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2285,8 +2405,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 380, y: 600}
+  m_AnchoredPosition: {x: 0, y: 80}
+  m_SizeDelta: {x: 380, y: 500}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1781119404
 MonoBehaviour:
@@ -2537,6 +2657,7 @@ RectTransform:
   - {fileID: 791223400}
   - {fileID: 230189547}
   - {fileID: 1781119403}
+  - {fileID: 967357013}
   m_Father: {fileID: 616821905}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2558,7 +2679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9019608, g: 0.90588236, b: 0.9098039, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2566,7 +2687,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

@@ -46,15 +46,16 @@ public class ElementaryManager : MonoBehaviour
     {
         pnlMainInfo.SetActive(false);
         playerMarker = new OnlineMapsMarker[ins.Length]; //we want same length when creating markers same as the array of our instruments
-
+        
         for (int i = 0; i < ins.Length; i++)
         {
 
             playerMarker[i] = OnlineMapsMarkerManager.CreateItem(ins[i].cordinates);
 
             playerMarker[i].label = ins[i].nameTitle;
-            playerMarker[i].texture = ins[i].imgMarker.texture;
-            playerMarker[i].scale = 0.1f;
+            playerMarker[i].texture = ins[i].imgMarker;
+            
+            //playerMarker[i].scale = 0.1f;
         }
 
 
@@ -68,8 +69,8 @@ public class ElementaryManager : MonoBehaviour
     {
         btnPlaySound.gameObject.GetComponent<Image>().sprite = sprPlaySound;//we access the clip from our AudioSource
         
-        btnReloadSound.onClick.AddListener(() => StartCoroutine(loop(sourceCam.clip)));
-        //we "assing" the click on the markers and call the method that shows the instrument information 
+        //btnReloadSound.onClick.AddListener(() => StartCoroutine(loop()));
+        //we "assign" the click on the markers and call the method that shows the instrument information 
         for (int i = 0; i < playerMarker.Length; i++)
         {
             playerMarker[i].OnClick += ShowInformation;
@@ -95,8 +96,7 @@ public class ElementaryManager : MonoBehaviour
                     txtMainInfo.text = ins[i].infoText;
                     sourceCam.clip = ins[i].clip;
                     btnPlaySound.gameObject.GetComponent<Image>().sprite = sprPlaySound;
-                    btnPlaySound.onClick.AddListener(() => PlaySound(sourceCam.clip));
-                    //btnPauseSound.onClick.AddListener(PauseSound);
+                    btnReloadSound.onClick.AddListener(() => StartCoroutine(loop()));
                     Debug.Log("first info: "+ins[i].clip.name);
                 }
 
@@ -115,8 +115,6 @@ public class ElementaryManager : MonoBehaviour
                     txtMainInfo.text = ins[i].infoText;
                     sourceCam.clip = ins[i].clip;
                     StopSound();
-                    /*btnPlaySound.onClick.AddListener(() => PlaySound(sourceCam.clip));
-                    btnPauseSound.onClick.AddListener(PauseSound);*/
                 }
                 Debug.Log("second info "+ins[i].clip.name);
             }
@@ -125,22 +123,23 @@ public class ElementaryManager : MonoBehaviour
 
     }
     #region Sound
-    public void PlaySound(AudioClip clip)
+    public void PlaySound()
     {
-        sourceCam.clip = clip;
+        
         if (sourceCam.isPlaying)
         {
             btnPlaySound.gameObject.GetComponent<Image>().sprite = sprPlaySound;
-            //sprPauseSound.gameObject.SetActive(false);
             sourceCam.Pause();
         }
         else
         {
+            //sourceCam.clip = clip;
             btnPlaySound.gameObject.GetComponent<Image>().sprite = sprPauseSound;
             sourceCam.Play();
         }
 
         Invoke("IsFinished", sourceCam.clip.length);
+        
     }
 
     //if user listens to the sound, then the image will turn to the play sprite to indicate that the sound has finished playing
@@ -157,16 +156,21 @@ public class ElementaryManager : MonoBehaviour
             btnPlaySound.gameObject.GetComponent<Image>().sprite = sprPlaySound;
         }
     }
-    IEnumerator loop(AudioClip clip)
+    IEnumerator loop()
     {
-        StopSound();
-        while (true)
-        {
-            yield return new WaitForSeconds(sourceCam.clip.length);
-            /*sourceCam.PlayOneShot(clip);
-            sourceCam.Stop();*/
-        }
         
+        if (sourceCam.isPlaying)
+        {
+            sourceCam.time = 0;
+            /*sourceCam.Stop();
+            yield return new WaitForSeconds(0.1f);
+            sourceCam.PlayOneShot(clip);*/
+        }
+        //Debug.Log("Clip: "+clip.name);
+        
+        yield return null;
+
+
     }
 
     #endregion

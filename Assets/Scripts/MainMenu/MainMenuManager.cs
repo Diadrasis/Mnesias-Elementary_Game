@@ -16,22 +16,10 @@ public class MainMenuManager : MonoBehaviour
     public Button btnPlay;
 
     [Space]
-    [Header("PreSchoolElements")]
-    public GameObject pnlPreS;
-    public Button btnPreSchool;
-
-    [Space]
     [Header("ElementarySchoolElements")]
     public GameObject pnlElementary;
     public Button btnElementary;
 
-
-    [Space]
-    [Header("HighSchoolElements")]
-    public GameObject pnlHighS;
-    public Button btnHigh;
-
-    
 
     // Start is called before the first frame update
     void Start()
@@ -46,8 +34,6 @@ public class MainMenuManager : MonoBehaviour
     private void SubscribeToMenuButtons()
     {
         btnElementary.onClick.AddListener(OpenElementary);
-        btnPreSchool.onClick.AddListener(OpenPreSchool);
-        btnHigh.onClick.AddListener(OpenHighSchool);
         btnBack.onClick.AddListener(BackPanels);
         
     }
@@ -62,21 +48,6 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
-    private void OpenHighSchool()
-    {
-        OpenClosePanels(false, true, false, false, true, false);
-        btnBack.gameObject.SetActive(true);
-        StartCoroutine(ImageOpacity());
-        btnPlay.onClick.AddListener(() => LoadLevelGame("HighSchool"));
-    }
-
-    private void OpenPreSchool()
-    {
-        OpenClosePanels(false, true, true, false, false, false);
-        btnBack.gameObject.SetActive(true);
-        StartCoroutine(ImageOpacity());
-        btnPlay.onClick.AddListener(() => LoadLevelGame("PreSchoolGame"));
-    }
 
     private void OpenElementary()
     {
@@ -94,10 +65,8 @@ public class MainMenuManager : MonoBehaviour
     void OpenClosePanels(bool pnlMain, bool pnlNext, bool pnlPre, bool pnlEle, bool pnlHigh, bool topB)
     {
         pnlMainMenuButtons.SetActive(pnlMain);
-        pnlNextSelection.SetActive(pnlNext);
-        pnlPreS.SetActive(pnlPre);
-        pnlElementary.SetActive(pnlEle);
-        pnlHighS.SetActive(pnlHigh);
+        pnlNextSelection.SetActive(pnlNext);        
+        pnlElementary.SetActive(pnlEle);        
         topBar.SetActive(topB);
     }
 

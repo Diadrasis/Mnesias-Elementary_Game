@@ -10,7 +10,7 @@ public class Instrument : ScriptableObject
     public Vector2 cordinates;
 
     [Tooltip("Assign the Image of the instrument for the marker, needs .texture in code")]
-    public Sprite imgMarker;
+    public Texture2D imgMarker;
 
     [Tooltip("Assign the Image of the instrument, needs .texture in code")]
     public Sprite mainImage;
