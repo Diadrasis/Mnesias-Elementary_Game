@@ -14,6 +14,8 @@ public class MainMenuManager : MonoBehaviour
     public Color imgColor;
     public GameObject topBar;
     public Button btnPlay;
+    public Image pnlTransition;
+    
 
     [Space]
     [Header("ElementarySchoolElements")]
@@ -24,10 +26,12 @@ public class MainMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        OpenClosePanels(true,false,false,false,false,true);
+        OpenClosePanels(true,false,false,true);
         btnBack.gameObject.SetActive(false);
         SubscribeToMenuButtons();
         imgColor = btnImage.color;
+        pnlTransition.gameObject.SetActive(false);
+        //Shader.SetGlobalFloat("Dissolution level", 0f);
         
     }
 
@@ -35,7 +39,6 @@ public class MainMenuManager : MonoBehaviour
     {
         btnElementary.onClick.AddListener(OpenElementary);
         btnBack.onClick.AddListener(BackPanels);
-        
     }
 
     private void BackPanels()
@@ -51,9 +54,11 @@ public class MainMenuManager : MonoBehaviour
 
     private void OpenElementary()
     {
-        OpenClosePanels(false, true, false, true, false, false);
+        OpenClosePanels(false, true, true, false);
         btnBack.gameObject.SetActive(true);
         StartCoroutine(ImageOpacity());
+        pnlTransition.gameObject.SetActive(true);
+        
         btnPlay.onClick.AddListener(()=>LoadLevelGame("ElementarySchool"));
     }
 
@@ -62,7 +67,7 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene(nameScene);
     }
 
-    void OpenClosePanels(bool pnlMain, bool pnlNext, bool pnlPre, bool pnlEle, bool pnlHigh, bool topB)
+    void OpenClosePanels(bool pnlMain, bool pnlNext, bool pnlEle, bool topB)
     {
         pnlMainMenuButtons.SetActive(pnlMain);
         pnlNextSelection.SetActive(pnlNext);        
