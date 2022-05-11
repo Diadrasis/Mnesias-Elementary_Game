@@ -19,6 +19,7 @@ public class DissolveMat : MonoBehaviour
     {
         finalValue += 1.0f / myValue * Time.deltaTime;
         pnlMat.SetFloat("_Level", finalValue);
+        if (finalValue >= 1.2f) { this.gameObject.SetActive(false); }    
         //Debug.Log("Value: "+finalValue);
     }
 }

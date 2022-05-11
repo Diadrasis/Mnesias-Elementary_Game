@@ -30,7 +30,7 @@ Material:
     m_Floats:
     - _ColorMask: 15
     - _Edges: 0.022
-    - _Level: 0.97200125
+    - _Level: 1.5039948
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
