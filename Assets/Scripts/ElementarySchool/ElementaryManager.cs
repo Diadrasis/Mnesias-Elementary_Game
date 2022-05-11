@@ -33,7 +33,6 @@ public class ElementaryManager : MonoBehaviour
     public AudioSource sourceCam;
     #endregion
 
-
     #region UnityMethods
 
     private void Awake()
@@ -54,7 +53,6 @@ public class ElementaryManager : MonoBehaviour
 
             playerMarker[i].label = ins[i].nameTitle;
             playerMarker[i].texture = ins[i].imgMarker;
-            
             //playerMarker[i].scale = 0.1f;
         }
 
